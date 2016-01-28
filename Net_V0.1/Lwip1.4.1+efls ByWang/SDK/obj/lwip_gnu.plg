@@ -1,0 +1,144 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\王均伟\LWIP1.4.1在我移植的在板子上STM32+DP83848裸奔的程序\Lwip1.4.1+efls ByWang\SDK\lwip_gnu.uvproj
+Project File Date:  01/23/2016
+
+<h2>Output:</h2>
+Build target 'lwip+efsl+ds18b20'
+compiling netconf.c...
+..\myself\src\netconf.c(173): warning:  #223-D: function "tcp_tmr" declared implicitly
+..\myself\src\netconf.c:       tcp_tmr();
+..\myself\src\netconf.c:       ^
+..\myself\src\netconf.c(52): warning:  #177-D: variable "IPaddress" was declared but never referenced
+..\myself\src\netconf.c:   static uint32_t IPaddress = 0;
+..\myself\src\netconf.c:                   ^
+..\myself\src\netconf.c: ..\myself\src\netconf.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=51260 RO-data=28056 RW-data=1712 ZI-data=55104  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 2 Warning(s).
+Build target 'lwip+efsl+ds18b20'
+compiling main.c...
+..\myself\src\main.c(69): warning:  #223-D: function "netbios_init" declared implicitly
+..\myself\src\main.c:                     netbios_init();
+..\myself\src\main.c:                     ^
+..\myself\src\main.c(70): warning:  #223-D: function "tftpd_init" declared implicitly
+..\myself\src\main.c:                     tftpd_init();
+..\myself\src\main.c:                     ^
+..\myself\src\main.c(75): warning:  #223-D: function "my_smtp_test" declared implicitly
+..\myself\src\main.c:                     my_smtp_test("The Board is Power up...");
+..\myself\src\main.c:                     ^
+..\myself\src\main.c(80): warning:  #223-D: function "TcpTestThread" declared implicitly
+..\myself\src\main.c:                             TcpTestThread(LocalTime);
+..\myself\src\main.c:                             ^
+..\myself\src\main.c: ..\myself\src\main.c: 4 warnings, 0 errors
+compiling netconf.c...
+..\myself\src\netconf.c(173): warning:  #223-D: function "tcp_tmr" declared implicitly
+..\myself\src\netconf.c:       tcp_tmr();
+..\myself\src\netconf.c:       ^
+..\myself\src\netconf.c(52): warning:  #177-D: variable "IPaddress" was declared but never referenced
+..\myself\src\netconf.c:   static uint32_t IPaddress = 0;
+..\myself\src\netconf.c:                   ^
+..\myself\src\netconf.c: ..\myself\src\netconf.c: 2 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\myself\src\stm32f10x_it.c(155): warning:  #1295-D: Deprecated declaration Read_Eth_Packet - give arg types
+..\myself\src\stm32f10x_it.c:     extern void Read_Eth_Packet(); //读取数据包大BUFF中
+..\myself\src\stm32f10x_it.c:                 ^
+..\myself\src\stm32f10x_it.c: ..\myself\src\stm32f10x_it.c: 1 warning, 0 errors
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(380): warning:  #550-D: variable "dst_ip_addr" was set but never used
+..\myself\src\client_tcpudp.c:                   ip_addr_t dst_ip_addr;
+..\myself\src\client_tcpudp.c:                             ^
+..\myself\src\client_tcpudp.c(436): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 2 warnings, 0 errors
+compiling DS18B20SROM.c...
+..\myself\src\DS18B20SROM.c(525): warning:  #223-D: function "FS_Writehtml" declared implicitly
+..\myself\src\DS18B20SROM.c:    FS_Writehtml((char*)temp,33);
+..\myself\src\DS18B20SROM.c:    ^
+..\myself\src\DS18B20SROM.c: ..\myself\src\DS18B20SROM.c: 1 warning, 0 errors
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(294): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(494): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 2 warnings, 0 errors
+compiling sd_stm32.c...
+compiling snmp_app.c...
+..\smtp\snmp_app.c(25): warning:  #1-D: last line of file ends without a newline
+..\smtp\snmp_app.c:   #endif
+..\smtp\snmp_app.c:         ^
+..\smtp\snmp_app.c: ..\smtp\snmp_app.c: 1 warning, 0 errors
+linking...
+Program Size: Code=55640 RO-data=28256 RW-data=1732 ZI-data=55428  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 13 Warning(s).
+Build target 'lwip+efsl+ds18b20'
+linking...
+Program Size: Code=55640 RO-data=28256 RW-data=1732 ZI-data=55428  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Build target 'lwip+efsl+ds18b20'
+linking...
+Program Size: Code=55640 RO-data=28256 RW-data=1732 ZI-data=55428  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\王均伟\\LWIP1.4.1在我移植的在板子上STM32+DP83848裸奔的程序\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+Set JLink Project File to "D:\王均伟\LWIP1.4.1在我移植的在板子上STM32+DP83848裸奔的程序\Lwip1.4.1+efls ByWang\SDK\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 805306163 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.209V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'lwip+efsl+ds18b20'
+linking...
+Program Size: Code=55640 RO-data=28256 RW-data=1732 ZI-data=55428  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Build target 'lwip+efsl+ds18b20'
+linking...
+Program Size: Code=55640 RO-data=28256 RW-data=1732 ZI-data=55428  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
